@@ -1,6 +1,6 @@
 import React from "react";
 import { PenSquareIcon, Trash2Icon } from "lucide-react";
-import Navbar from "../components/navbar";
+import Navbar from "../components/navbar.jsx";
 import { useNavigate, useParams, } from 'react-router'
 import { useState, useEffect } from "react";
 import api from "../lib/axios";
