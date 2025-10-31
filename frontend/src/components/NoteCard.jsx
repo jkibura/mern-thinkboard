@@ -82,12 +82,13 @@ const NoteCard = ({ note, setNotes }) => {
           <p>{note.createdAt}</p>
 
           <div className="flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
-            <button
-              onClick={ <Link to="/notes/${note._id}"></Link> }
-              className="p-1.5 rounded-lg hover:bg-gray-100 dark:hover:bg-neutral-800"
-            >
-              <PenSquareIcon size={16} />
-            </button>
+            <Link to={`/notes/${note._id}`}>
+              <button
+                className="p-1.5 rounded-lg hover:bg-gray-100 dark:hover:bg-neutral-800"
+              >
+                <PenSquareIcon size={16} />
+              </button>
+            </Link>
             <button
               onClick={(e) => handleDelete(e, note._id)}
               className="p-1.5 rounded-lg hover:bg-red-50 dark:hover:bg-red-900/30 text-red-500"
