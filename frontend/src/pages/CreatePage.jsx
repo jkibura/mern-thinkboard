@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../components/navbar";
+import Navbar from "../components/Navbar";
 import api from "../lib/axios"
 import { useState } from "react";
 import { useNavigate } from "react-router";
